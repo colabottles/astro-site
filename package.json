@@ -9,6 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.4"
+    "@astrojs/netlify": "^6.0.1",
+    "@astrojs/vue": "^5.0.4",
+    "astro": "^5.1.4",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "unocss": "^65.4.0"
   }
 }
