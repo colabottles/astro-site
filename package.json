@@ -1,7 +1,7 @@
 {
-  "name": "developer-astro",
+  "name": "astro-site",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -13,8 +13,5 @@
     "@astrojs/vue": "^5.0.4",
     "astro": "^5.1.4",
     "vue": "^3.5.13"
-  },
-  "devDependencies": {
-    "unocss": "^65.4.0"
   }
 }
