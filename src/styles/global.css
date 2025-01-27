@@ -14,6 +14,7 @@
  }
 
  body {
+   color: #fff;
    display: grid;
    padding: 1rem;
    line-height: 1.5;
@@ -34,6 +35,24 @@
    font-size: 2.5rem;
  }
 
+ .fm_description {
+  font-style: oblique;
+ }
+
+ .tags {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .tag {
+  margin: .25em;
+  border: 1px solid #f2f87e;
+  border-radius: .5em;
+  padding: .5em 1em;
+  font-size: 1.15em;
+  font-weight: 800;
+ }
+
  /* nav styles */
  nav {
    display: flex;
@@ -49,6 +68,7 @@
  }
 
  .nav-links a {
+   color: #8ef410;
    padding: 10px 0;
    text-decoration: none;
    font-size: 1.2rem;

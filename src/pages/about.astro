@@ -1,8 +1,10 @@
 ---
 import AboutMe from "../components/AboutMe.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "About Todd";
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <AboutMe />
 </BaseLayout>

@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Welcome from '../components/Welcome.astro';
+
+const pageTitle = "Home Page";
 ---
 
-<BaseLayout>
-	<Welcome />
+<BaseLayout pageTitle={pageTitle}>
+  <h2>This is a level two heading subtitle.</h2>
 </BaseLayout>
 
