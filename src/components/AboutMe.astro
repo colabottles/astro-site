@@ -2,22 +2,30 @@
 import "../styles/global.css";
 
 const pageTitle = "About Todd";
+const happy = true;
+const finished = true;
+const goal = 3;
+
+const firstName = "Todd";
+const country = "America";
+const occupation = "Developer";
+const hobbies = ["cooking ", "travel ", "foodie"];
+const skills = ["HTML, ", "CSS, ", "JavaScript, ", "Vue, ", "Astro, ", " and Technical Writing"];
+const skillColor = "navy";
+const fontWeight = "700";
+const textCase = "uppercase";
 ---
 
 <div id="container">
   <main>
     <section id="hero">
       <h1>{pageTitle}</h1>
-      <h2>... and my new Astro site!</h2>
+      <h2>Hello, my name is Todd!</h2> 
+      
+      <p>I am {firstName} and I am a {occupation} from {country}, and my hobbies include: {hobbies}. With this Astro example blog from the documentation, I am very happy to report I am done with this project.</p> 
 
       <p>
-        I am working through Astro's introductory tutorial. This is the second
-        page on my website, and it's the first one I built myself!
-      </p>
-
-      <p>
-        This site will update as I complete more of the tutorial, so keep
-        checking back and see how my journey is going!
+        I am proficient in {skills} and have been working with these technologies for many years. Check back often to <a href="https://astrodeluxe.netlify.app">see my progress at AstroDeluxe</a>.
       </p>
     </section>
   </main>
