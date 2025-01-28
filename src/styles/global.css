@@ -8,13 +8,17 @@
    margin: 0;
    width: 100%;
    height: 100%;
-   background-color: hsl(197, 21%, 17%);
    font-family: "Barlow Light", Inter, Roboto, "Helvetica Neue", "Arial Nova",
      "Nimbus Sans", Arial, sans-serif;
  }
 
+ html {
+  /* background-color: hsl(197, 21%, 17%); */
+  background-color: #fffafa;
+  color: #111;
+ }
+
  body {
-   color: #fff;
    display: grid;
    padding: 1rem;
    line-height: 1.5;
@@ -101,6 +105,49 @@
    background-color: #ccbeba;
  }
 
+ button {
+  border: 0;
+  outline: 2px solid #1d920b;
+  color: #fffafa;
+  background-color:hsl(126, 87%, 21%);
+  padding: 1em;
+ }
+
+ button:hover {
+  background-color: #9fb560;
+  color: #111;
+  outline: 2px solid #8ef410;
+ }
+
+ /* Styling for dark theme */
+ html.dark {
+  background-color: #070610;
+  color: #fffafa;
+ }
+
+  /* Dark mode toggle */
+ html.dark button#themeToggle .moon {
+  fill: transparent;
+ }
+ html.dark button#themeToggle .sun {
+  fill: rgb(240, 220, 5);
+ }
+
+ #themeToggle {
+  border: 0;
+  background: none;
+ }
+
+ .sun { fill: transparent; }
+ .moon { fill: black; }
+
+ :global(.dark) .sun { fill: transparent; }
+ :global(.dark) .moon { fill: white; }
+
+ button#themeToggle {
+  outline: none;
+ }
+
  @media screen and (min-width: 636px) {
    .nav-links {
      display: block;
@@ -128,6 +175,10 @@
    margin-top: 1rem;
  }
 
- footer p {
+.dark footer p {
    color: #fff;
+ }
+
+ footer p {
+  color: #111;
  }
