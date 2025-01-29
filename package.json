@@ -3,8 +3,8 @@
   "type": "module",
   "version": "0.0.5",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "pnpm astro dev",
+    "build": "pnpm astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
