@@ -1,11 +1,25 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting';
-const pageTitle = "Home Page";
+import { contentfulClient } from "../lib/contentful";
+import type { AstroDeluxe } from "../lib/contentful";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogEntry from "../components/BlogEntry.astro";
+import "../styles/global.css";
+
+const entries = await contentfulClient.getEntries<AstroDeluxe>({
+  content_type: "astroDeluxe",
+});
+
+const posts = entries.items.map((item) => {
+  const { title, date, description, slug } = item.fields;
+  return {
+    title,
+    slug,
+    description,
+    date: new Date(date).toLocaleDateString()
+  };
+});
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <h2>This is a level two heading subtitle.</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "Salam"]} />
+<BaseLayout>
+  <BlogEntry />
 </BaseLayout>
-
