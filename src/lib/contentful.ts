@@ -2,7 +2,7 @@ import * as contentful from "contentful";
 import type { EntryFieldTypes } from "contentful";
 
 export interface AstroDeluxe {
-  contentTypeId: "astroDeluxe";
+  contentTypeId: "astroDeluxe",
   fields: {
     title: EntryFieldTypes.Text
     content: EntryFieldTypes.RichText,

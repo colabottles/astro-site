@@ -9,16 +9,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^6.1.0",
-    "@astrojs/preact": "^4.0.3",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/vue": "^5.0.6",
-    "@contentful/rich-text-html-renderer": "^17.0.0",
-    "astro": "^5.1.10",
-    "contentful": "^11.4.4",
+    "@astrojs/netlify": "^6.5.9",
+    "@astrojs/preact": "^4.1.0",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/vue": "^5.1.0",
+    "@contentful/rich-text-html-renderer": "^17.1.0",
+    "astro": "^5.13.5",
+    "contentful": "^11.7.15",
+    "npm-check-updates": "^18.0.3",
     "pnpm": "^9.15.4",
-    "preact": "^10.25.4",
-    "vue": "^3.5.13"
+    "preact": "^10.27.1",
+    "vue": "^3.5.21"
   },
-  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+  "packageManager": "pnpm@10.15.1"
 }
